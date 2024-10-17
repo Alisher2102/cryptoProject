@@ -1,0 +1,99 @@
+.main-column{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 2rem;
+    justify-content: space-around;
+}
+.second-column{
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+}
+.about, .k-metrics{
+  padding: 1.5rem;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #575757;
+  opacity: 90%;
+}
+.about input,.k-metrics input{
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: #B7B7B7;
+  box-shadow: none;
+  border: none;
+}
+.about li:hover,.k-metrics li:hover{
+  background-color: #758694;
+  border-radius: 10px;
+  cursor:pointer;
+}
+.about li,.k-metrics li{
+  padding-left: 0.5rem;  
+  margin-top: 0.5rem;
+}
+.about input:focus,.k-metrics input:focus{
+  outline: 0.25rem solid #ffffff; /* Change color and width of focus outline */
+  outline-offset: 0.06rem; /* This adds space between the border and the outline */
+}
+.about input::placeholder,.k-metrics input::placeholder{
+  font-weight: bold;
+}
+#assets, #metrics{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-height: 15rem;
+  overflow-y: auto;
+}
+#myChart{
+  background-color: #303030;
+  border-radius: 10px;
+  padding: 1rem;
+  opacity: 90%;
+}
+
+.bg-image{
+  z-index:-1;
+  transform: rotate(-15deg);
+  opacity: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  bottom: 50%;
+  left: 20%;
+  position: absolute;
+}
+.bg-image img{
+  width: 50%;
+}
+.xCareImg{
+  width: 25%;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  background-color: #1E3E62;
+  color: #fff;    
+  width: 100%;
+}
+.wrapper{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+  min-height: 100vh;
+}
+.table{
+  width: 75%;
+  margin: auto;
+  flex:1;
+}
+.w-25 {
+  width: 10% !important
+}

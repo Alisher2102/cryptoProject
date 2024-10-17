@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="/CSS/Chart.css">
+    <title>Chart</title>
+</head>
+<body class="bg-dark">
+    <div class="wrapper">
+        <div class="d-flex justify-content-center align-items-center">
+            <h1 class="text-center text-light me-5" >Cryptocurrency Rankings</h1>
+            <img class="img-fluid w-25 rounded"
+            unselectable="on"   
+            src="/Images/xCareRotated-removebg-preview.png">
+        </div>
+        <div class="bg-image">
+            <img src="/Images/xCareRotated-removebg-preview.png"  alt="xCare">
+        </div>
+        <div class="main-column">
+                
+                <form id="select">
+                    <div class="about">
+                        <h1>
+                            About
+                        </h1>
+                        <input type="search" placeholder="Search..." id="search" onkeyup="searchAssets(`search`,`assets`)" title="Type your coin">
+                        <label for="assets">Choose an asset</label>
+                        <ul name="assets" id="assets" class="mt-2">
+                        </ul>
+                    </div>
+                    <div class="k-metrics mt-2">
+                        <h1>
+                            Key Metrics
+                        </h1>
+                        <input type="search" placeholder="Search..." id="metricSearch" onkeyup="searchAssets(`metricSearch`,`metrics`)" title="Type">
+                        <label for="metrics">Metrics</label>
+                        <ul name="assets" id="metrics" class="mt-2">
+                        </ul>
+                    </div>
+                </form>
+            <div class="second-column">
+                <div>
+                    <canvas id="myChart" width="800" height="400" >
+                    </canvas>
+                    <p id="noDataMessage" style="display: none;">No metrics data available</p>
+                </div>
+            </div>
+        </div>
+        <footer class="footer mt-1">
+            <h1>
+                @xcarecapital
+            </h1>
+        </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/JS/Chart.js"></script>
+</html>
